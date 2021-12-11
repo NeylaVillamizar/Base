@@ -1,0 +1,38 @@
+<div class="container">
+    <header><h1>Tablas de Empleados</h1></header>
+    <a [routerLink]="'/administracion/crear-empleado/'" class="btn">Nuevo Empleado</a>
+    <table class="table responsive">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Apellidos
+            </th>
+            <th>
+                Correo
+            </th>
+            <th>
+                Editar
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of listadoEmpleados">
+            <td>
+                {{p.nombres}}
+            </td>
+            <td>
+                {{p.apellidos}}
+            </td>
+            <td>
+                {{p.email}}
+            </td>
+            <td>
+                <a [routerLink]="'/administracion/editar-empleado/{{p.id}}'" class="btn">Editar Empleado</a>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>

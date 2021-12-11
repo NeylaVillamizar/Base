@@ -1,0 +1,22 @@
+<nav class="indigo lighten-2">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a [routerLink]="'/inicio'" class="brand-logo">La Casa Beta</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a [routerLink]="'/administracion/crear-empleado'">Crear Empleado</a></li>
+        <li><a [routerLink]="'/administracion/buscar-empleado'">Buscar Empleados</a></li>
+        <li><a [routerLink]="'/editar-empleado'">Editar Empleados</a></li>
+        <li><a [routerLink]="'/seguridad/identificacion'">Iniciar Sesión</a></li>
+      </ul>
+    </div>
+  </div>  
+</nav>
+<div class="container">
+  <ul class="sidenav" id="mobile-demo">
+    <li><a [routerLink]="'/administracion/crear-empleado'">Crear Empleado</a></li>
+    <li><a [routerLink]="'/administracion/buscar-empleado'">Buscar Empleados</a></li>
+    <li><a [routerLink]="'/editar-empleado'">Editar Empleados</a></li>
+    <li><a [routerLink]="'/seguridad/identificacion'">Iniciar Sesión</a></li>
+  </ul>
+</div>
